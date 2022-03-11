@@ -1,4 +1,4 @@
-FROM fluent/fluentd:stable
+FROM fluentd:v1.14-debian-1
 
 RUN apk update 
 
