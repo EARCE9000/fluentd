@@ -4,7 +4,8 @@ USER root
 
 RUN apt-get -y update \
 && apt-get -y upgrade \
-&& apt-get -y make gcc 
+&& apt-get install -y make gcc \
+&& apt-get -y clean
 
 RUN gem install fluent-plugin-elasticsearch fluent-plugin-forest fluent-plugin-mongo fluent-plugin-mysql fluent-plugin-rewrite
 
